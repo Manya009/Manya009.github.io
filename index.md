@@ -3,17 +3,55 @@ title: Home
 layout: home
 ---
 <link rel="stylesheet" href="/assets/css/style.css">
+<div class="navbar">
 
-# Hi — I’m Manish Patil
-**AI / ML Engineer** — I build models, visualizations, and systems for research and production.
+<div><strong>Manish Patil</strong></div>
 
-📄 [Resume](./resume.pdf){:target="_blank"} · 
-💻 [GitHub](https://github.com/Manya009){:target="_blank"} · 
-🔗 [LinkedIn](https://www.linkedin.com/in manish-patil-1303aa215/){:target="_blank"} · 
-✍️ [Medium](https://medium.com/@273manishp){:target="_blank"} .
-⌗ [Kaggle](https://www.kaggle.com/manishpatil009){:target="_blank"}
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/projects">Projects</a>
+<a href="/blog">Blog</a>
+<a href="/about">About</a>
+<a href="#contact">Contact</a>
+<button onclick="toggleDark()">🌙</button>
+</div>
 
-## Featured projects
+</div>
+
+
+<div class="hero">
+<style>
+.hero h1 {
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
+<h1>Hi — I'm Manish Patil</h1>
+
+<p><strong>AI / ML Engineer</strong> building models, experiments, and ML systems.</p>
+
+<p>
+📄 <a href="/resume.pdf" target="_blank">Resume</a> ·
+💻 <a href="https://github.com/Manya009">GitHub</a> ·
+🔗 <a href="https://www.linkedin.com/in manish-patil-1303aa215/">LinkedIn</a> ·
+✍️ <a href="https://medium.com/@273manishp">Medium</a> ·
+📊 <a href="https://www.kaggle.com/manishpatil009">Kaggle</a>
+</p>
+
+</div>
+
+
 ## Featured Projects
 
 <div class="card-grid">
@@ -47,3 +85,5 @@ layout: home
 </div>
 
 </div>
+
+<script src="/assets/js/theme.js"></script>
