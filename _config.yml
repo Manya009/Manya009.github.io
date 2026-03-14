@@ -1,0 +1,34 @@
+title: "Manish Patil — AI / ML Engineer"
+email: 273manishp@gmail.com
+description: "Portfolio — projects, experiments, and writing about machine learning and AI systems."
+baseurl: ""
+url: "https://Manya009.github.io"
+
+# ── Remove the Minima theme — use custom layouts instead ──
+# theme: minima   ← DELETE THIS LINE. Minima overrides all your CSS.
+# Use remote_theme or no theme at all with custom _layouts.
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+collections:
+  projects:
+    output: true
+  experiments:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: "experiments"
+    values:
+      layout: project
+
+sass:
+  style: compressed
