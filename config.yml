@@ -24,3 +24,7 @@ defaults:
       type: "experiments"
     values:
       layout: project
+
+id: "portfolio-css"
+sass:
+  style: compressed
