@@ -91,7 +91,7 @@ layout: home
 
 <div class="card">
 <h3>
-<a href="https://medium.com/@YOUR_USERNAME">
+<a href="https://medium.com/@273manishp">
 More on Medium →
 </a>
 </h3>
