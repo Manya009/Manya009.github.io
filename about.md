@@ -101,5 +101,3 @@ permalink: /about/
     </div>
   </div>
 </footer>
-
-</div>
