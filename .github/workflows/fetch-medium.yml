@@ -14,16 +14,16 @@ jobs:
         run: |
           curl -s "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@273manishp" \
             | python3 -c "
-          import json,sys
+          import json, sys, re
           data = json.load(sys.stdin)
-          posts = data['items'][:3]
+          posts = data.get('items', [])[:3]
           out = []
           for p in posts:
-              desc = p['description']
-              import re
-              desc = re.sub('<[^>]+>', '', desc)[:120].strip() + '...'
-              out.append({'title': p['title'], 'url': p['link'], 'description': desc})
-          print(json.dumps(out, indent=2))
+              desc = re.sub('<[^>]+>', '', p.get('description', ''))
+              desc = re.sub(r'[^\x00-\x7F]+', '', desc)[:120].strip() + '...'
+              title = re.sub(r'[^\x00-\x7F]+', '', p.get('title', ''))
+              out.append({'title': title, 'url': p['link'], 'description': desc})
+          print(json.dumps(out, ensure_ascii=True, indent=2))
           " > _data/medium_posts.json
 
       - name: Commit if changed
