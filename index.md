@@ -8,7 +8,7 @@ layout: home
 
 📄 [Resume](./resume.pdf){:target="_blank"} · 
 💻 [GitHub](https://github.com/Manya009){:target="_blank"} · 
-🔗 [LinkedIn](https://www.linkedin.com/in/manish-patil-1303aa215/){:target="_blank"} · 
+🔗 [LinkedIn](https://www.linkedin.com/in manish-patil-1303aa215/){:target="_blank"} · 
 ✍️ [Medium](https://medium.com/@273manishp){:target="_blank"}
 
 ## Featured projects
