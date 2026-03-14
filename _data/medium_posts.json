@@ -7,7 +7,7 @@
   {
     "title": "Complete Web Development Architecture Guide for ML Engineers",
     "url": "https://medium.com/@273manishp/complete-web-development-architecture-guide-for-ml-engineers-6ba6a88b73cb?source=rss-e008208268ba------2",
-    "description": "\ud83d\uddc4\ufe0f DATABASE\u00a0CHOICES\nPostgreSQL\nWhen to\u00a0Use:\n\nComplex relationships between data (e.g., users \u2192 orders \u2192 products)\nNeed..."
+    "description": "DATABASECHOICES\nPostgreSQL\nWhen toUse:\n\nComplex relationships between data (e.g., users  orders  products)\nNeed ACID c..."
   },
   {
     "title": "Machine Learning Roadmap",
