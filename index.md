@@ -148,21 +148,25 @@ layout: home
     <section class="section">
       <div class="section-header">
         <h2>Latest Writing</h2>
-        <a href="https://medium.com/@273manishp" class="see-all" target="_blank">Medium →</a>
       </div>
       <div class="card-grid">
-        {% for post in site.posts limit:2 %}
-        <div class="card">
-          <div class="card-tags"><span class="tag">Post</span></div>
-          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
-        </div>
-        {% endfor %}
+
+        {% if site.data.medium_posts and site.data.medium_posts.size > 0 %}
+          {% for post in site.data.medium_posts %}
+          <div class="card">
+            <div class="card-tags"><span class="tag">Medium</span></div>
+            <h3><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h3>
+            <p>{{ post.description }}</p>
+          </div>
+          {% endfor %}
+        {% endif %}
+
         <div class="card">
           <div class="card-tags"><span class="tag">Medium</span></div>
           <h3><a href="https://medium.com/@273manishp" target="_blank">More on Medium →</a></h3>
           <p>Technical writing on ML systems, RAG architectures, and AI engineering in production.</p>
         </div>
+
       </div>
     </section>
 
