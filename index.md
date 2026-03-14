@@ -64,12 +64,11 @@ layout: home
       <div class="hero-avatar">
         <div class="avatar-ring">
           <div class="avatar-inner">
-            <img src="/assets/img/profile.jpeg" alt="Manish Patil"
+            <img src="/assets/img/profile.jpg" alt="Manish Patil"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <span class="avatar-fallback" style="display:none">MP</span>
           </div>
         </div>
-        <div class="avatar-badge">🎓 Global Future Scholar</div>
       </div>
     </section>
 
@@ -118,29 +117,85 @@ layout: home
     <!-- ── Skills ────────────────────────── -->
     <section class="section">
       <div class="section-header">
-        <h2>Technical Skills</h2>
+        <h2>Skills &amp; Expertise</h2>
       </div>
-      <div class="skills-grid">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">PyTorch</span>
-        <span class="skill-pill">TensorFlow</span>
-        <span class="skill-pill">LangChain</span>
-        <span class="skill-pill">LangGraph</span>
-        <span class="skill-pill">FastAPI</span>
-        <span class="skill-pill">Django</span>
-        <span class="skill-pill">RAG Pipelines</span>
-        <span class="skill-pill">Vector DBs</span>
-        <span class="skill-pill">NLP</span>
-        <span class="skill-pill">Computer Vision</span>
-        <span class="skill-pill">MCP</span>
-        <span class="skill-pill">Docker</span>
-        <span class="skill-pill">AWS</span>
-        <span class="skill-pill">CI/CD</span>
-        <span class="skill-pill">SQL</span>
-        <span class="skill-pill">Pandas</span>
-        <span class="skill-pill">HuggingFace</span>
-        <span class="skill-pill">Pydantic</span>
-        <span class="skill-pill">OCR</span>
+
+      <div class="skills-categories">
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">AI &amp; ML Engineering</div>
+          <div class="skill-pills">
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">HuggingFace</span>
+            <span class="skill-pill">LangChain</span>
+            <span class="skill-pill">LangGraph</span>
+            <span class="skill-pill">RAG Pipelines</span>
+            <span class="skill-pill">Vector DBs</span>
+            <span class="skill-pill">Prompt Engineering</span>
+            <span class="skill-pill">AI Agents</span>
+            <span class="skill-pill">MCP</span>
+            <span class="skill-pill">LangSmith</span>
+            <span class="skill-pill">Pinecone</span>
+            <span class="skill-pill">Weaviate</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Backend &amp; Systems</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">Pydantic</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">GCP</span>
+            <span class="skill-pill">CI/CD</span>
+            <span class="skill-pill">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Data &amp; Analysis</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">OCR Systems</span>
+            <span class="skill-pill">NLP</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">ETL Pipelines</span>
+            <span class="skill-pill">Feature Engineering</span>
+            <span class="skill-pill">Data Visualisation</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">LLM Providers</div>
+          <div class="skill-pills">
+            <span class="skill-pill">OpenAI GPT-4</span>
+            <span class="skill-pill">Claude</span>
+            <span class="skill-pill">Mistral</span>
+            <span class="skill-pill">Groq</span>
+            <span class="skill-pill">Whisper</span>
+            <span class="skill-pill">Stable Diffusion XL</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <div class="skill-cat-title">Soft Skills</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Communication</span>
+            <span class="skill-pill">Problem-Solving</span>
+            <span class="skill-pill">Adaptability</span>
+            <span class="skill-pill">Team Management</span>
+            <span class="skill-pill">Attention to Detail</span>
+            <span class="skill-pill">Learning Agility</span>
+          </div>
+        </div>
+
       </div>
     </section>
 
