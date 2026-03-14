@@ -6,6 +6,8 @@ url: "https://Manya009.github.io" # replace
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap 
 
 collections:
   projects:
@@ -24,6 +26,8 @@ defaults:
       type: "experiments"
     values:
       layout: project
+
+
 
 id: "portfolio-css"
 sass:
