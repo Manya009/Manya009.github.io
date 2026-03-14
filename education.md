@@ -29,15 +29,20 @@ permalink: /education/
         <h2>Education</h2>
       </div>
 
-      <div class="edu-grid">
+      <!-- Stacked vertically, max-width for readability -->
+      <div style="display:flex; flex-direction:column; gap:14px; max-width:720px;">
 
         <div class="edu-card">
-          <div class="degree">MSc Artificial Intelligence</div>
-          <div class="school">University of Manchester</div>
-          <div class="years">2025 – 2026 · Manchester, UK</div>
-          <div class="badge">🏆 Global Future Scholarship</div>
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+            <div>
+              <div class="degree">MSc Artificial Intelligence</div>
+              <div class="school">University of Manchester</div>
+            </div>
+            <div class="years" style="white-space:nowrap;">2025 – 2026 · Manchester, UK</div>
+          </div>
+          <div class="badge" style="margin-top:12px;">🏆 Global Future Scholarship</div>
           <div style="margin-top:16px;">
-            <div style="font-size:0.78rem; font-family:var(--font-mono); color:var(--muted); margin-bottom:8px;">Focus areas</div>
+            <div style="font-size:0.72rem; font-family:var(--font-mono); color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">Focus areas</div>
             <div class="skills-grid" style="gap:6px;">
               <span class="skill-pill" style="font-size:0.72rem; padding:3px 10px;">Machine Learning</span>
               <span class="skill-pill" style="font-size:0.72rem; padding:3px 10px;">Deep Learning</span>
@@ -48,15 +53,19 @@ permalink: /education/
         </div>
 
         <div class="edu-card">
-          <div class="degree">B.E. AI &amp; Data Science</div>
-          <div class="school">Shah and Anchor Kutchhi Engineering College</div>
-          <div class="years">2020 – 2024 · Mumbai, India</div>
-          <div class="badge">UK First-Class Equivalent</div>
-          <div style="margin-top:12px; font-size:0.78rem; font-family:var(--font-mono); color:var(--muted);">
+          <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+            <div>
+              <div class="degree">B.E. AI &amp; Data Science</div>
+              <div class="school">Shah and Anchor Kutchhi Engineering College</div>
+            </div>
+            <div class="years" style="white-space:nowrap;">2020 – 2024 · Mumbai, India</div>
+          </div>
+          <div class="badge" style="margin-top:12px;">UK First-Class Equivalent</div>
+          <div style="margin-top:10px; font-size:0.78rem; font-family:var(--font-mono); color:var(--muted);">
             Minor in Blockchain · Student Council Member
           </div>
-          <div style="margin-top:12px;">
-            <div style="font-size:0.78rem; font-family:var(--font-mono); color:var(--muted); margin-bottom:8px;">Coursework</div>
+          <div style="margin-top:14px;">
+            <div style="font-size:0.72rem; font-family:var(--font-mono); color:var(--muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:10px;">Coursework</div>
             <div class="skills-grid" style="gap:6px;">
               <span class="skill-pill" style="font-size:0.72rem; padding:3px 10px;">Data Structures</span>
               <span class="skill-pill" style="font-size:0.72rem; padding:3px 10px;">Algorithms</span>
@@ -69,7 +78,7 @@ permalink: /education/
       </div>
 
       <!-- Certifications -->
-      <div class="section-header" style="margin-top:48px; padding-top:48px; border-top:1px solid var(--border);">
+      <div class="section-header" style="margin-top:52px; padding-top:52px; border-top:1px solid var(--border);">
         <h2>Certifications</h2>
       </div>
       <div class="card-grid">
