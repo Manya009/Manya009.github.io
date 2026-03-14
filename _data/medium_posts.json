@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "Loss Landscapes: Part 1",
+    "url": "https://medium.com/generative-ai-revolution-ai-native-transformation/loss-landscapes-part-1-325353f68e42?source=rss-e008208268ba------2",
+    "description": "and why they matter in Machine learning!\nTL;DR: In machine learning, the loss landscape is a mathematical surface that..."
+  },
+  {
+    "title": "Complete Web Development Architecture Guide for ML Engineers",
+    "url": "https://medium.com/@273manishp/complete-web-development-architecture-guide-for-ml-engineers-6ba6a88b73cb?source=rss-e008208268ba------2",
+    "description": "\ud83d\uddc4\ufe0f DATABASE\u00a0CHOICES\nPostgreSQL\nWhen to\u00a0Use:\n\nComplex relationships between data (e.g., users \u2192 orders \u2192 products)\nNeed..."
+  },
+  {
+    "title": "Machine Learning Roadmap",
+    "url": "https://medium.com/@273manishp/roadmap-for-fine-tuning-open-source-models-llms-vision-models-ec81f9c88fe6?source=rss-e008208268ba------2",
+    "description": "Machine learning is a branch of AI where systems learn from data to improve their performance without being explicitly..."
+  }
+]
