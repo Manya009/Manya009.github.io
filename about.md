@@ -13,10 +13,10 @@ permalink: /about/
     <a href="/" class="nav-logo">Manish Patil</a>
     <div class="nav-links">
       <a href="/">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/research/">Research</a>
       <a href="/experience/">Experience</a>
+      <a href="/projects/">Projects</a>
       <a href="/education/">Education</a>
+      <a href="/research/">Research</a>
       <a href="/about/" class="active">About</a>
     </div>
   </div>
@@ -31,10 +31,14 @@ permalink: /about/
       </div>
 
       <p style="color:var(--muted); line-height:1.8; margin-bottom:20px;">
-        I'm a Data Scientist and AI engineer with a focus on building systems that actually work in production —
-        not just notebooks. After two years at CypherSOL Fintech building OCR pipelines, forensic analytics tools,
-        and RAG chatbots serving real clients, I'm now studying MSc AI at the University of Manchester on a
-        Global Future Scholarship.
+        My journey in Artificial Intelligence began with a Bachelor of Engineering in AI & Data Science from Shah and Anchor Kutchhi Engineering College. From the start, I was passionate about not only learning but also sharing knowledge, which led me to organize and teach multiple technical workshops as a core member of my university’s AI student clubs.
+
+        I translated that foundation into professional impact during a two-year tenure at CypherSOL, where I was promoted to Data Scientist. In this role I applied rigorous AI and data-science methods to lead a product initiative that produced a 10% uplift in sales for our core fintech offering. I also led a sensitive, high-stakes team collaboration with the Anti-Terrorism Squad (ATS) and the Economic Offences Wing (EOW), where our algorithm design and investigative analytics materially supported national security and financial-crime inquiries.
+
+        Those industry experiences — especially solving complex problems in financial data — deepened my appetite for specialization. I am currently pursuing an MSc in Artificial Intelligence at The University of Manchester, where I’m focused on advancing my expertise in applied machine learning, probabilistic modelling, and trustworthy AI.
+
+        My goal is to leverage this advanced academic training to build the next generation of intelligent financial systems. I am eager to connect with researchers, recruiters, and industry leaders who are pioneering new ground in AI-driven finance. 
+
       </p>
       <p style="color:var(--muted); line-height:1.8; margin-bottom:40px;">
         I care about the full stack of ML: from data cleaning to model serving to CI/CD and monitoring.

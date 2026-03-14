@@ -13,10 +13,10 @@ permalink: /experience/
     <a href="/" class="nav-logo">Manish Patil</a>
     <div class="nav-links">
       <a href="/">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/research/">Research</a>
       <a href="/experience/" class="active">Experience</a>
+      <a href="/projects/">Projects</a>
       <a href="/education/">Education</a>
+      <a href="/research/">Research</a>
       <a href="/about/">About</a>
     </div>
   </div>

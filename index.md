@@ -10,10 +10,10 @@ layout: home
     <span class="nav-logo">Manish Patil</span>
     <div class="nav-links">
       <a href="/" class="active">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/research/">Research</a>
       <a href="/experience/">Experience</a>
+      <a href="/projects/">Projects</a>
       <a href="/education/">Education</a>
+      <a href="/research/">Research</a>
       <a href="/about/">About</a>
     </div>
   </div>
@@ -64,7 +64,7 @@ layout: home
       <div class="hero-avatar">
         <div class="avatar-ring">
           <div class="avatar-inner">
-            <img src="/assets/img/profile.jpg" alt="Manish Patil"
+            <img src="/assets/img/profile.jpeg" alt="Manish Patil"
                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <span class="avatar-fallback" style="display:none">MP</span>
           </div>

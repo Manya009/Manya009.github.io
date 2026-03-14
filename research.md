@@ -13,10 +13,10 @@ permalink: /research/
     <a href="/" class="nav-logo">Manish Patil</a>
     <div class="nav-links">
       <a href="/">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/research/" class="active">Research</a>
       <a href="/experience/">Experience</a>
+      <a href="/projects/">Projects</a>
       <a href="/education/">Education</a>
+      <a href="/research/" class="active">Research</a>
       <a href="/about/">About</a>
     </div>
   </div>
@@ -36,7 +36,7 @@ permalink: /research/
           <span class="tag">GenAI</span>
           <span class="tag">Creative AI</span>
         </div>
-        <h3>STUDIOS AI: AI-Powered Creative Content Generation Platform</h3>
+        <h3><a href="https://www.jetir.org/view?paper=JETIR2404742" target="_blank">STUDIOS AI: AI-Powered Creative Content Generation Platform ↗</a></h3>
         <p>Explores an AI system capable of generating professional stories, poetry, and images from text prompts. The platform integrates GPT-3.5/4 and Stable Diffusion XL to democratise creative content generation for non-technical users.</p>
 
         <p><strong style="color:var(--text); font-weight:500;">Key contributions:</strong></p>
