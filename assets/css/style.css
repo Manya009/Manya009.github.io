@@ -1,86 +1,71 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+body{
+font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
+background:#fafafa;
+margin:0;
+color:#222;
 }
 
-/* Container */
-
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
+.container{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
 }
 
-/* Navigation */
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 20px;
-  border-bottom: 1px solid #eee;
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
 }
 
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: 500;
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
 }
 
-/* Hero */
-
-.hero {
-  margin-top: 40px;
+.hero{
+display:flex;
+align-items:center;
+gap:40px;
+margin-bottom:70px;
 }
 
-.hero h1 {
-  font-size: 42px;
+.profile{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
 }
 
-.hero p {
-  font-size: 20px;
+.hero-text h1{
+font-size:40px;
+margin-bottom:10px;
 }
 
-/* Cards */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-  margin-top: 20px;
+.subtitle{
+font-size:18px;
 }
 
-.card {
-  padding: 25px;
-  border-radius: 10px;
-  border: 1px solid #e5e5e5;
-  background: white;
-  transition: all 0.25s ease;
+.section{
+margin-top:60px;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
-.card h3 {
-  margin-top: 0;
+.card{
+background:white;
+padding:22px;
+border-radius:10px;
+border:1px solid #eee;
+transition:0.25s;
 }
 
-/* Dark mode */
-
-.dark {
-  background: #111;
-  color: #eee;
-}
-
-.dark .card {
-  background: #1e1e1e;
-  border-color: #333;
-}
-
-.dark a {
-  color: #7aa2ff;
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }

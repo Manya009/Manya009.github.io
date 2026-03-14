@@ -2,63 +2,59 @@
 title: Home
 layout: home
 ---
-<link rel="stylesheet" href="/assets/css/style.css">
-<div class="navbar">
 
-<div><strong>Manish Patil</strong></div>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<div class="container">
+
+<div class="navbar">
+<div class="logo">Manish Patil</div>
 
 <div class="nav-links">
 <a href="/">Home</a>
 <a href="/projects">Projects</a>
-<a href="/blog">Blog</a>
+<a href="/research">Research</a>
+<a href="/experience">Experience</a>
+<a href="/education">Education</a>
 <a href="/about">About</a>
-<a href="#contact">Contact</a>
-<button onclick="toggleDark()">🌙</button>
 </div>
-
 </div>
-
 
 <div class="hero">
-<style>
-.hero h1 {
-  animation: fadeIn 1.2s ease;
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
+<img src="/assets/img/profile.jpg" class="profile">
 
-<h1>Hi — I'm Manish Patil</h1>
+<div class="hero-text">
 
-<p><strong>AI / ML Engineer</strong> building models, experiments, and ML systems.</p>
+<h1>Manish Patil</h1>
+
+<p class="subtitle">
+AI / ML Engineer building models, experiments and ML systems.
+</p>
 
 <p>
-📄 <a href="/resume.pdf" target="_blank">Resume</a> ·
+📄 <a href="/resume.pdf">Resume</a> ·
 💻 <a href="https://github.com/Manya009">GitHub</a> ·
-🔗 <a href="https://www.linkedin.com/in manish-patil-1303aa215/">LinkedIn</a> ·
+🔗 <a href="https://www.linkedin.com/in/manish-patil-1303aa215/">LinkedIn</a> ·
 ✍️ <a href="https://medium.com/@273manishp">Medium</a> ·
 📊 <a href="https://www.kaggle.com/manishpatil009">Kaggle</a>
 </p>
 
 </div>
 
+</div>
 
-## Featured Projects
+
+<div class="section">
+
+<h2>Featured Projects</h2>
 
 <div class="card-grid">
 
-{% for project in site.projects %}
+{% for project in site.projects limit:3 %}
 
 <div class="card">
+
 <h3>
 <a href="{{ project.url }}">{{ project.title }}</a>
 </h3>
@@ -71,14 +67,19 @@ layout: home
 
 </div>
 
+</div>
 
-## Latest Writing
+
+<div class="section">
+
+<h2>Latest Writing</h2>
 
 <div class="card-grid">
 
-{% for post in site.posts limit:3 %}
+{% for post in site.posts limit:2 %}
 
 <div class="card">
+
 <h3>
 <a href="{{ post.url }}">{{ post.title }}</a>
 </h3>
@@ -90,16 +91,19 @@ layout: home
 {% endfor %}
 
 <div class="card">
+
 <h3>
 <a href="https://medium.com/@273manishp">
 More on Medium →
 </a>
 </h3>
 
-<p>Technical writing about ML, experiments and research.</p>
+<p>Technical writing about ML systems and research.</p>
 
 </div>
 
 </div>
 
-<script src="/assets/js/theme.js"></script>
+</div>
+
+</div>
