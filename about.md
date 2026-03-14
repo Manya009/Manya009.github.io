@@ -74,6 +74,7 @@ permalink: /about/
       <div class="hero-links" style="margin-bottom:40px;">
         <a href="mailto:273manishp@gmail.com">✉ 273manishp@gmail.com</a>
         <a href="https://www.linkedin.com/in/manish-patil-1303aa215/" target="_blank">in LinkedIn</a>
+        <a href="https://github.com/Manya009" target="_blank">⌥ GitHub</a>
       </div>
 
       <!-- Interests -->
