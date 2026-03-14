@@ -37,12 +37,12 @@ layout: home
 <div class="card-grid">
 
 <div class="card">
-<h3><a href="/blog/bigram-language-model">Bigram Language Model</a></h3>
-<p>Building a simple character-level language model.</p>
+<h3><a href="https://medium.com/@273manishp/loss-landscapes-part-1-325353f68e42">Loss Landscapes: Part 1</a></h3>
+<p>Part 1 of learning basics of Deep learning by the perspective of Loss Landscapes.</p>
 </div>
 
 <div class="card">
-<h3><a href="https://medium.com/@your-medium">More on Medium →</a></h3>
+<h3><a href="https://medium.com/@273manishp">More on Medium →</a></h3>
 <p>Technical writing about ML, experiments, and learning notes.</p>
 </div>
 
