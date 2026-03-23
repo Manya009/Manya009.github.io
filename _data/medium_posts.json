@@ -1,6 +1,11 @@
 [
   {
-    "title": "From Probability to Loss - How MLE Builds Machine Learning: Part 1",
+    "title": "From Probability to Loss - How Max Likelihood Estimation (MLE) Builds Machine Learning: Part 2",
+    "url": "https://pub.towardsai.net/from-probability-to-loss-how-mle-builds-machine-learning-part-2-789a9f27c254?source=rss-e008208268ba------2",
+    "description": "A quick recap of where we leftoff\nIn Part 1, we followed a single thread of logic from start tofinish.\n\nRead: From Prob..."
+  },
+  {
+    "title": "From Probability to Loss - How Max Likelihood Estimation (MLE) Builds Machine Learning: Part 1",
     "url": "https://pub.towardsai.net/from-probability-to-loss-how-mle-builds-machine-learning-part-1-52fe0efa43a9?source=rss-e008208268ba------2",
     "description": "Loss functions arent magic. They arent some arbitrary design choice that researchers pulled out of thin air. Every loss..."
   },
@@ -18,10 +23,5 @@
     "title": "Complete Web Development Architecture Guide for ML Engineers",
     "url": "https://medium.com/@273manishp/complete-web-development-architecture-guide-for-ml-engineers-6ba6a88b73cb?source=rss-e008208268ba------2",
     "description": "DATABASECHOICES\nPostgreSQL\nWhen toUse:\n\nComplex relationships between data (e.g., users  orders  products)\nNeed ACID c..."
-  },
-  {
-    "title": "Machine Learning Roadmap",
-    "url": "https://medium.com/@273manishp/roadmap-for-fine-tuning-open-source-models-llms-vision-models-ec81f9c88fe6?source=rss-e008208268ba------2",
-    "description": "Machine learning is a branch of AI where systems learn from data to improve their performance without being explicitly..."
   }
 ]
