@@ -50,12 +50,8 @@ layout: home
             <span class="stat-label">yrs industry</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">50+</span>
-            <span class="stat-label">doc types</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">10k+</span>
-            <span class="stat-label">docs/month</span>
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Models Trained</span>
           </div>
         </div>
 
@@ -230,7 +226,7 @@ layout: home
 
 <footer class="site-footer">
   <div class="container">
-    <span class="footer-copy">© 2025 Manish Patil</span>
+    <span class="footer-copy">© 2026 Manish Patil</span>
     <div class="footer-links">
       <a href="https://github.com/Manya009" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/manish-patil-1303aa215/" target="_blank">LinkedIn</a>

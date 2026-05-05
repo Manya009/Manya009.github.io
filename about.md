@@ -87,13 +87,13 @@ permalink: /about/
         <span class="skill-pill">📚 Reading</span>
       </div>
 
-    </section>
-  </div>
+</section>
+</div>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <span class="footer-copy">© 2025 Manish Patil</span>
+    <span class="footer-copy">© 2026 Manish Patil</span>
     <div class="footer-links">
       <a href="https://github.com/Manya009" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/manish-patil-1303aa215/" target="_blank">LinkedIn</a>
@@ -101,3 +101,5 @@ permalink: /about/
     </div>
   </div>
 </footer>
+
+</div>

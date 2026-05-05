@@ -38,7 +38,7 @@ permalink: /education/
               <div class="degree">MSc Artificial Intelligence</div>
               <div class="school">University of Manchester</div>
             </div>
-            <div class="years" style="white-space:nowrap;">2025 – 2026 · Manchester, UK</div>
+            <div class="years" style="white-space:nowrap;">2026 – 2026 · Manchester, UK</div>
           </div>
           <div class="badge" style="margin-top:12px;">🏆 Global Future Scholarship</div>
           <div style="margin-top:16px;">
@@ -110,7 +110,7 @@ permalink: /education/
 
 <footer class="site-footer">
   <div class="container">
-    <span class="footer-copy">© 2025 Manish Patil</span>
+    <span class="footer-copy">© 2026 Manish Patil</span>
     <div class="footer-links">
       <a href="https://github.com/Manya009" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/manish-patil-1303aa215/" target="_blank">LinkedIn</a>

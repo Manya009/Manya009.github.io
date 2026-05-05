@@ -33,7 +33,7 @@ permalink: /experience/
 
         <div class="timeline-item">
           <div class="timeline-meta">
-            <div class="timeline-date">Jun 2024 – Jul 2025</div>
+            <div class="timeline-date">Jun 2024 – Jul 2026</div>
             <div class="timeline-company">CypherSOL · Mumbai</div>
           </div>
           <div class="timeline-content">
@@ -85,7 +85,7 @@ permalink: /experience/
 
 <footer class="site-footer">
   <div class="container">
-    <span class="footer-copy">© 2025 Manish Patil</span>
+    <span class="footer-copy">© 2026 Manish Patil</span>
     <div class="footer-links">
       <a href="https://github.com/Manya009" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/manish-patil-1303aa215/" target="_blank">LinkedIn</a>
