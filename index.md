@@ -46,12 +46,12 @@ layout: home
 
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-num">2+</span>
+            <span class="stat-num">2.5+</span>
             <span class="stat-label">yrs industry</span>
           </div>
           <div class="stat-item">
             <span class="stat-num">15+</span>
-            <span class="stat-label">Models Trained</span>
+            <span class="stat-label">ML Models Trained</span>
           </div>
         </div>
 

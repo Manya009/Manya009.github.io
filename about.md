@@ -87,9 +87,6 @@ permalink: /about/
         <span class="skill-pill">📚 Reading</span>
       </div>
 
-</section>
-</div>
-</main>
 
 <footer class="site-footer">
   <div class="container">
@@ -102,4 +99,3 @@ permalink: /about/
   </div>
 </footer>
 
-</div>
