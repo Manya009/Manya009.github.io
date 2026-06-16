@@ -89,43 +89,54 @@ permalink: /experience/
   z-index: 1000;
   background: rgba(5,12,26,0.92);
   backdrop-filter: blur(8px);
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 24px;
+  overflow-y: auto;
 }
 .lightbox-overlay.open { display: flex; }
 .lightbox-inner {
   position: relative;
-  max-width: 720px;
+  max-width: 680px;
   width: 100%;
-}
-.lightbox-inner img {
-  width: 100%;
-  border-radius: var(--r-lg);
-  border: 1px solid var(--border2);
-  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 32px;
 }
 .lightbox-close {
-  position: absolute;
-  top: -40px;
-  right: 0;
-  background: none;
-  border: none;
+  position: fixed;
+  top: 20px;
+  right: 28px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--r);
   color: var(--muted);
-  font-size: 1.5rem;
-  cursor: pointer;
+  font-size: 0.78rem;
   font-family: var(--font-mono);
-  transition: color .15s;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: color .15s, background .15s;
+  z-index: 1001;
+  letter-spacing: 0.04em;
 }
-.lightbox-close:hover { color: var(--text-hi); }
+.lightbox-close:hover { color: var(--text-hi); background: var(--bg4); }
 .lightbox-caption {
-  margin-top: 12px;
+  margin-top: 14px;
   text-align: center;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--muted);
+  letter-spacing: 0.03em;
 }
-.lightbox-no-img {
+.lightbox-loading {
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+.lightbox-no-pdf {
   background: var(--bg3);
   border: 1px dashed var(--border2);
   border-radius: var(--r-lg);
@@ -135,6 +146,18 @@ permalink: /experience/
   font-size: 0.875rem;
   line-height: 1.7;
 }
+/* PDF canvas pages */
+.pdf-page-canvas {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border);
+  user-select: none;
+  -webkit-user-select: none;
+}
+.pdf-page-canvas:first-child { border-radius: var(--r-lg) var(--r-lg) 0 0; }
+.pdf-page-canvas:last-child  { border-radius: 0 0 var(--r-lg) var(--r-lg); }
+.pdf-page-canvas:only-child  { border-radius: var(--r-lg); }
+.pdf-page-canvas + .pdf-page-canvas { border-top: none; }
 </style>
 
 <div class="site-wrap">
@@ -292,55 +315,76 @@ permalink: /experience/
 
 </div>
 
+<!-- PDF.js — renders PDF to canvas so no browser download toolbar appears -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
 const refs = {
   'ref-imran-sable': {
-    src: '/assets/img/references/ref-imran-sable',
-    caption: 'Letter of Reference — Mr. Imran Sable, CEO, CypherSOL Fintech India Pvt Ltd'
+    pdf: '/assets/img/references/ref-imran-sable.pdf',
+    caption: 'Letter of Reference — Mr. Imran Sable, CEO · CypherSOL Fintech India Pvt Ltd'
   },
   'ref-shamlata-poojary': {
-    src: '/assets/img/references/ref-shamlata-poojary',
-    caption: 'Letter of Reference — Ms. Shamlata Poojary, CTO & MD, CypherSOL Fintech India Pvt Ltd'
+    pdf: '/assets/img/references/ref-shamlata-poojary.pdf',
+    caption: 'Letter of Reference — Ms. Shamlata Poojary, CTO & MD · CypherSOL Fintech India Pvt Ltd'
   }
 };
 
-function openLightbox(id) {
-  const ref = refs[id];
-  const overlay = document.getElementById('lightbox');
-  const content = document.getElementById('lightbox-content');
-  const caption = document.getElementById('lightbox-caption');
+async function openLightbox(id) {
+  const ref      = refs[id];
+  const overlay  = document.getElementById('lightbox');
+  const content  = document.getElementById('lightbox-content');
+  const caption  = document.getElementById('lightbox-caption');
 
-  // Try jpg first, fall back to png; show placeholder if neither loads
-  const img = document.createElement('img');
-  img.alt = ref.caption;
-  img.onerror = function() {
-    // try png
-    if (!this.src.endsWith('.png')) {
-      this.src = ref.src + '.png';
-    } else {
-      content.innerHTML = '<div class="lightbox-no-img">Letter image not yet uploaded.<br><span style="font-size:0.78rem; font-family:var(--font-mono); color:var(--accent2);">Upload to: assets/img/references/' + id + '.jpg</span></div>';
-      return;
-    }
-  };
-  img.src = ref.src + '.jpg';
-
-  content.innerHTML = '';
-  content.appendChild(img);
-  caption.textContent = ref.caption;
   overlay.classList.add('open');
+  overlay.scrollTop = 0;
   document.body.style.overflow = 'hidden';
+  caption.textContent = ref.caption;
+  content.innerHTML   = '<div class="lightbox-loading">Loading…</div>';
+
+  try {
+    const pdf = await pdfjsLib.getDocument(ref.pdf).promise;
+    content.innerHTML = '';
+
+    for (let p = 1; p <= pdf.numPages; p++) {
+      const page     = await pdf.getPage(p);
+      // Scale to fill ~680px container width at 96dpi
+      const baseVP   = page.getViewport({ scale: 1 });
+      const scale    = 680 / baseVP.width * 1.8;
+      const viewport = page.getViewport({ scale });
+
+      const canvas   = document.createElement('canvas');
+      canvas.width   = viewport.width;
+      canvas.height  = viewport.height;
+      canvas.className = 'pdf-page-canvas';
+
+      // Block right-click and drag so the PDF can't be trivially saved
+      canvas.addEventListener('contextmenu', e => e.preventDefault());
+      canvas.addEventListener('dragstart',   e => e.preventDefault());
+
+      await page.render({ canvasContext: canvas.getContext('2d'), viewport }).promise;
+      content.appendChild(canvas);
+    }
+  } catch (err) {
+    const filename = ref.pdf.split('/').pop();
+    content.innerHTML =
+      '<div class="lightbox-no-pdf">Letter not yet uploaded.<br>' +
+      '<span style="font-size:0.78rem;font-family:var(--font-mono);color:var(--accent2);">' +
+      'assets/img/references/' + filename + '</span></div>';
+  }
 }
 
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('open');
   document.body.style.overflow = '';
+  document.getElementById('lightbox-content').innerHTML = '';
 }
 
 function closeLightboxOnBackdrop(e) {
   if (e.target === document.getElementById('lightbox')) closeLightbox();
 }
 
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') closeLightbox();
-});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
