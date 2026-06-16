@@ -146,11 +146,14 @@ layout: home
             <span class="skill-pill">Pydantic</span>
             <span class="skill-pill">SQL</span>
             <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">Redis</span>
+            <span class="skill-pill">Celery</span>
             <span class="skill-pill">Docker</span>
             <span class="skill-pill">AWS</span>
             <span class="skill-pill">GCP</span>
             <span class="skill-pill">CI/CD</span>
-            <span class="skill-pill">Git</span>
+            <span class="skill-pill">MLflow</span>
+            <span class="skill-pill">Weights &amp; Biases</span>
           </div>
         </div>
 
@@ -159,12 +162,16 @@ layout: home
           <div class="skill-pills">
             <span class="skill-pill">Pandas</span>
             <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">scikit-learn</span>
+            <span class="skill-pill">XGBoost</span>
             <span class="skill-pill">OCR Systems</span>
             <span class="skill-pill">NLP</span>
             <span class="skill-pill">Computer Vision</span>
             <span class="skill-pill">ETL Pipelines</span>
             <span class="skill-pill">Feature Engineering</span>
             <span class="skill-pill">Data Visualisation</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Tableau</span>
           </div>
         </div>
 
