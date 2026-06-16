@@ -31,9 +31,14 @@ layout: home
         <h1>Manish<br><span>Patil</span></h1>
 
         <p class="hero-bio">
-          <strong>AI / ML Engineer</strong> building production-grade ML systems —
-          OCR pipelines, RAG chatbots, agentic platforms, and forensic analytics.
-          Currently reading <strong>MSc AI at Manchester</strong> on a Global Future Scholarship.
+          <strong>AI / ML Engineer</strong> with 2+ years of production experience building and deploying
+          intelligent systems in fintech — RAG pipelines, multi-agent platforms, LLM integrations,
+          and forensic analytics tools used by law enforcement.
+          Co-built <strong>CypherTrace</strong>, a forensic fund-tracing product that helped crack
+          a real money laundering case within its first month. Smart India Hackathon 2024 National Finalist.
+          Published researcher (JETIR, Impact Factor 7.95).
+          Currently completing an <strong>MSc in AI at the University of Manchester</strong>
+          on a Global Future Scholarship.
         </p>
 
         <div class="hero-links">
